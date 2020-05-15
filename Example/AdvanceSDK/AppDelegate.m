@@ -12,6 +12,7 @@
 #import "ViewController.h"
 
 #import <MercurySDK/MercurySDK.h>
+#import <BUAdSDK/BUAdSDK.h>
 
 @interface AppDelegate ()
 @end
@@ -26,7 +27,7 @@
     nav.navigationBar.translucent = NO;
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
-    
+    [BUAdSDKManager setAppID:@"5000546"];
     [MercuryConfigManager setAppID:@"100255"
                           mediaKey:@"757d5119466abe3d771a211cc1278df7"];
     

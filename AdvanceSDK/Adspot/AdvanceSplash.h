@@ -23,6 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 控制器【必传】
 @property(nonatomic, weak) UIViewController *viewController;
 
+@property(nonatomic,strong,nullable) NSMutableDictionary * extraSettings;
+
+
 - (instancetype)initWithMediaId:(NSString *)mediaid
                        adspotId:(NSString *)adspotid
                  viewController:(UIViewController *)viewController;

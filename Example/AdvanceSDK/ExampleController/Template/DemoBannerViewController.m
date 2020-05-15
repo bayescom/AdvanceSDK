@@ -44,6 +44,10 @@
                                                 adspotId:@"10000558"
                                                 mediaKey:@"757d5119466abe3d771a211cc1278df7"
                                                   sdkId:SDK_ID_MERCURY];
+    NSMutableDictionary* extraSettings= [[NSMutableDictionary alloc]init];
+//    [extraSettings setValue:@(YES) forKey:@"animationOn"];
+    self.advanceBanner.extraSettings= extraSettings;
+                                        
     [self.advanceBanner loadAd];
     
 }

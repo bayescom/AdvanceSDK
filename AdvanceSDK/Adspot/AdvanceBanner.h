@@ -19,6 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, weak) UIView *adContainer;
 @property(nonatomic, weak) UIViewController *viewController;
 @property(nonatomic, assign) int refreshInterval;
+///额外设置
+/// animationOn = YES/NO
+@property(nonatomic,strong,nullable) NSMutableDictionary * extraSettings;
 
 - (instancetype)initWithMediaId:(NSString *)mediaid
                        adspotId:(NSString *)adspotid

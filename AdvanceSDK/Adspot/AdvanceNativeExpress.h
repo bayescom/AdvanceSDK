@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<AdvanceNativeExpressDelegate> delegate;
 @property (nonatomic, weak) UIViewController *viewController;
 @property (nonatomic, assign) CGSize adSize;
+@property(nonatomic,strong,nullable) NSMutableDictionary * extraSettings;
 
 - (instancetype)initWithMediaId:(NSString *)mediaid
                        adspotId:(NSString *)adspotid

@@ -41,6 +41,12 @@
     _mercury_ad.showCloseBtn = YES;
     _mercury_ad.interval = _adspot.refreshInterval;
     [_adspot.adContainer addSubview:_mercury_ad];
+    if(_adspot.extraSettings)
+    {
+        BOOL animationOn= [_adspot.extraSettings objectForKey:@"animationOn"];
+        _mercury_ad.animationOn= animationOn;
+
+    }
     [_mercury_ad loadAdAndShow];
 }
 

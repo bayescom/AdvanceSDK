@@ -18,6 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(weak) UIViewController *viewController;
 
+@property(nonatomic,strong,nullable) NSMutableDictionary * extraSettings;
+
+
 - (instancetype)initWithMediaId:(NSString *)mediaid
                        adspotId:(NSString *)adspotid
                  viewController:(nonnull UIViewController *)viewController;
